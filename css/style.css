@@ -1,0 +1,149 @@
+/*
+.draw {
+    display: none;
+}
+*/
+.getColor {
+    background-color: #333333;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding-top: 50px;
+    color: black;
+}
+#title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #D31027;
+}
+.getColor input {
+    width: 250px;
+    height: 20px;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#close {
+    width: 100px;
+    height: 30px;
+    line-height: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    background-color: #e52d27;
+    color: white;
+}
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+.draw {
+    background-color: darkslategray;
+    height: 100%;
+}
+#canvas {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.controls {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.controls ul {
+    padding: 0px;
+}
+.controls li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+.selected {
+    border: 5px solid white;
+    width: 40px !important;
+    height: 40px !important;
+}
+#revealColorSelect {
+    width: 200px;
+    height: 50px;
+    line-height: 30px;
+    padding: 10px;
+    background-color: #FE2E64;
+    border: none;
+    font-size: 20px;
+    display: inline-block;
+    color: #ffffff;
+}
+#colorSelect {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    color: black;
+}
+#newColor {
+    background-color: #ff0000;
+    width: 50%;
+    height: 150px;
+    float: left;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.sliders {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 150px;
+    background-color: #ffffff;
+}
+.sliders::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.add {
+    clear: both;
+    margin-top: 180px;
+}
+#addNewColor, #copyColor {
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    background-color: rgb(27,157,84);
+    color: #ffffff;
+    border: none;
+}
+#copyColor {
+    background-color: #e52d27;
+}
+.ad {
+    background-color: rgb(27,157,49);
+}

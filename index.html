@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>APP DRAW</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    
+    <body>
+        <div class="getColor">
+            <div class="box">
+                <p id="title">GET CSS COLOR</p>
+                <p>Copy code below</p>
+                <input type="text" id="hexa" placeholder="Color hexa">
+                <input type="text" id="rgb" placeholder="Color RGB">
+                <button id="close">CLOSE</button>
+            </div>
+        </div>
+        <div class="draw">
+            <canvas id="canvas" width="800px" height="400px"></canvas>
+            <div class="controls">
+                <ul>
+                    <li class="red selected"></li>
+                    <li class="blue"></li>
+                    <li class="yellow"></li>
+                </ul>
+                <button id="revealColorSelect">New Color</button>
+                <div id="colorSelect">
+                    <div id="newColor"></div>
+                    <div class="sliders">
+                        <p>
+                            <label for="red">Red</label>
+                            <input id="red" name="red" type="range" min=0 max=255 value=0>
+                        </p>
+                        <p>
+                            <label for="green">Green</label>
+                            <input id="green" name="green" type="range" min=0 max=255 value=0>
+                        </p>
+                        <p>
+                            <label for="blue">Blue</label>
+                            <input id="blue" name="blue" type="range" min=0 max=255 value=0>
+                        </p>
+                    </div>
+                    <div class="add">
+                        <button id="addNewColor">Add Color</button>
+                        <button id="copyColor">Get CSS Color</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="app.js" type="text/javascript" charset="utf-8"></script>    
+    </body>
+</html>
